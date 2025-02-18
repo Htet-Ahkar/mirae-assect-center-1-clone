@@ -42,9 +42,9 @@ export default function Navbar() {
         <div className="navbar-center hidden md:block">
           <ul className="flex flex-row gap-7">
             {navlinks.map((navLink) => (
-              <li>
+              <li key={navLink.title}>
                 <a
-                  className="text-xl font-extrabold"
+                  className="text-2xl font-extrabold"
                   key={navLink.title}
                   href={navLink.link}
                 >

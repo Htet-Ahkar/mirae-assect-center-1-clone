@@ -1,11 +1,18 @@
-import { Navbar, HeroSection, Footer } from "@/components/index";
-import Image from "next/image";
+import {
+  Navbar,
+  HeroSection,
+  Footer,
+  SecondSection,
+  CarouselSection,
+} from "@/components/index";
 
 export default function Home() {
   return (
     <>
       <Navbar></Navbar>
       <HeroSection></HeroSection>
+      <SecondSection></SecondSection>
+      <CarouselSection></CarouselSection>
       <Footer></Footer>
     </>
   );
