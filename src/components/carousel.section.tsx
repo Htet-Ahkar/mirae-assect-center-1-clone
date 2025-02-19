@@ -88,13 +88,13 @@ export default function CarouselSection() {
           <SwiperSlide key={slide.title}>
             {/* Body */}
 
-            <div className="relative z-30 flex h-screen flex-col justify-between px-20 pb-24 pt-64">
+            <div className="relative z-30 flex h-screen flex-col justify-between px-4 pb-14 pt-28 md:px-20 md:pb-24 md:pt-64">
               {/* Title */}
-              <h1 className="max-w-[1000px] text-2xl font-bold leading-[80px] md:text-[80px]">
+              <h1 className="max-w-[1000px] text-2xl font-bold md:text-[80px] md:leading-[80px]">
                 <span className="flex items-baseline">
                   The
                   <Image
-                    className="mx-5 h-20 w-fit md:h-20"
+                    className="mx-2 h-7 w-fit md:mx-5 md:h-20"
                     alt="The 1st Logo"
                     src={Logo}
                     quality={100}
@@ -111,15 +111,15 @@ export default function CarouselSection() {
               <div className="relative max-w-[1000px] border-t-2 border-gray-400">
                 {/* Progress Line */}
                 <div
-                  className={`absolute left-0 top-[-2px] z-40 h-[3px] bg-white ${i === 0 ? "w-[25%]" : "w-full"} ${i === 1 ? "w-[50%]" : "w-full"} ${i === 2 ? "w-[75%]" : "w-full"}`}
+                  className={`absolute left-0 top-[-2px] z-40 h-[3px] bg-white ${i === 0 ? "w-[25%]" : "w-0"} ${i === 1 ? "w-[50%]" : "w-0"} ${i === 2 ? "w-[75%]" : "w-0"} ${i === 3 ? "w-full" : "w-0"}`}
                 />
 
-                <p className="whitespace-pre-line py-7 text-xl font-bold leading-8">
+                <p className="whitespace-pre-line text-xs font-bold leading-5 md:py-7 md:text-xl md:leading-8">
                   {slide.description}
                 </p>
 
                 {/* View more Btn */}
-                <button className="custom-btn-outline">
+                <button className="custom-btn-outline mt-5 md:mt-0">
                   view more
                   <svg
                     width="24"

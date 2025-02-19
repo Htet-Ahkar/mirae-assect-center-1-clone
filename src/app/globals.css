@@ -12,8 +12,9 @@
 }
 
 .swiper-pagination {
-  @apply mb-16 !important;
+  @apply mb-5 md:mb-16 !important;
 }
+
 .swiper-pagination-bullet {
   @apply h-1 w-5 rounded-sm bg-white bg-opacity-70 transition-all md:w-8 !important;
 }
