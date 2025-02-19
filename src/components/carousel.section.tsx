@@ -1,6 +1,5 @@
-// import Swiper core and required modules
 "use client";
-import { Pagination, A11y, Autoplay } from "swiper/modules";
+import { Pagination, A11y, Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Environment from "../../public/environment.jpeg";
 import Building from "../../public/building.jpeg";
@@ -70,19 +69,19 @@ export default function CarouselSection() {
   return (
     <section className="bg-transparen flex h-screen w-screen items-center justify-center overflow-clip">
       <Swiper
-        modules={[Autoplay, Pagination, A11y]}
+        modules={[EffectFade, Autoplay, Pagination, A11y]}
         spaceBetween={5}
         slidesPerView={1}
+        // effect={"fade"} //! This module have error. After the first slide it doesn't continue
+        speed={1000}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         loop={true}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={slide.title}>
