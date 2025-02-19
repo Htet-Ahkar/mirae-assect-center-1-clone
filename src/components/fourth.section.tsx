@@ -43,22 +43,22 @@ export default function FourthSection() {
     },
   ];
   return (
-    <section className="flex h-screen w-screen items-center justify-center overflow-clip bg-[#242424]">
-      <div className="flex h-full w-full flex-col justify-between md:p-10">
+    <section className="flex w-screen items-center justify-center overflow-clip bg-[#242424] md:h-screen">
+      <div className="flex h-full w-full flex-col justify-between p-3 md:p-10">
         {/* Text */}
-        <div className="md:mt-32">
-          <h1 className="text-4xl font-bold leading-[50px] tracking-tight">
+        <div className="my-20 md:mt-32">
+          <h1 className="text-2xl font-bold tracking-tight md:text-4xl md:leading-[50px]">
             <span className="flex">
               ONLY
               <Image
-                className="mx-2 h-16 w-fit md:mx-5 md:h-10"
+                className="mx-2 h-7 w-fit md:mx-5 md:h-10"
                 alt="Center 1 logo"
                 src={Logo}
                 quality={100}
                 style={{ objectFit: "contain" }}
               />
             </span>
-            <span className="text-4xl font-normal">
+            <span className="text-xl font-normal md:text-4xl">
               미래에셋센터원에서만 누리는
               <span className="font-bold text-[#F58220]">특별한 혜택</span>
             </span>
