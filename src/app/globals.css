@@ -5,6 +5,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .custom-btn-outline {
+    @apply flex gap-2 rounded border border-white bg-transparent py-2 pl-4 font-semibold text-white transition-all hover:scale-110 hover:border-indigo-950 active:scale-90;
+  }
+}
+
+.swiper-pagination {
+  @apply mb-16 !important;
+}
+.swiper-pagination-bullet {
+  @apply h-1 w-5 rounded-sm bg-white bg-opacity-70 transition-all md:w-8 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-8 bg-opacity-100 md:w-10 !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

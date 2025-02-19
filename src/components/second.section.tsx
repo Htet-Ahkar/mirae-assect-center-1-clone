@@ -73,7 +73,7 @@ export default function SecondSection() {
             {/* Red border starting from the left on hover */}
             <div
               className={`absolute bottom-0 left-0 h-[3px] w-0 bg-orange-400 transition-all duration-300 group-hover:w-[60%] ${index === 2 ? "md:mb-[120px]" : ""} ${index === 1 ? "md:mb-[60px]" : ""} `}
-            ></div>
+            />
           </a>
         ))}
       </div>
