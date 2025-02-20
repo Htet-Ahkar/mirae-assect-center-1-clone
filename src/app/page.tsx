@@ -7,6 +7,7 @@ import {
   FourthSection,
   FifthSection,
   AvenueCarouselSection,
+  SeventhSection,
 } from "@/components/index";
 
 export default function Home() {
@@ -37,6 +38,10 @@ export default function Home() {
 
       <section className="snap-center snap-always" id="6">
         <AvenueCarouselSection></AvenueCarouselSection>
+      </section>
+
+      <section className="snap-center snap-always" id="7">
+        <SeventhSection></SeventhSection>
       </section>
 
       <Footer></Footer>
