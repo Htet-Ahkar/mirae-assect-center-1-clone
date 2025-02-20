@@ -3,13 +3,7 @@
 import Image from "next/image";
 import { PropsWithChildren } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  A11y,
-  Autoplay,
-  Navigation,
-  Pagination,
-  Scrollbar,
-} from "swiper/modules";
+import { A11y, Autoplay, Navigation } from "swiper/modules";
 import Event_1 from "../../public/event 1.png";
 import Event_2 from "../../public/event 2.png";
 

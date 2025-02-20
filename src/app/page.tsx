@@ -6,6 +6,7 @@ import {
   CarouselSection,
   FourthSection,
   FifthSection,
+  AvenueCarouselSection,
 } from "@/components/index";
 
 export default function Home() {
@@ -13,21 +14,31 @@ export default function Home() {
     // ! Scroll Snap do not work
     <main className="w-scree scroller h-screen snap-y snap-mandatory">
       <Navbar></Navbar>
+
       <section className="snap-center snap-always" id="1">
         <HeroSection></HeroSection>
       </section>
+
       <section className="snap-center snap-always" id="2">
         <SecondSection></SecondSection>
       </section>
+
       <section className="snap-center snap-always" id="3">
         <CarouselSection></CarouselSection>
       </section>
+
       <section className="snap-center snap-always" id="4">
         <FourthSection></FourthSection>
       </section>
+
       <section className="snap-center snap-always" id="5">
         <FifthSection></FifthSection>
       </section>
+
+      <section className="snap-center snap-always" id="6">
+        <AvenueCarouselSection></AvenueCarouselSection>
+      </section>
+
       <Footer></Footer>
     </main>
   );

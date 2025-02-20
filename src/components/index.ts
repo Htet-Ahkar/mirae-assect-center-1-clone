@@ -5,3 +5,4 @@ export { default as SecondSection } from "./second.section";
 export { default as CarouselSection } from "./carousel.section";
 export { default as FourthSection } from "./fourth.section";
 export { default as FifthSection } from "./fifth.section";
+export { default as AvenueCarouselSection } from "./avenue-carousel.section";
