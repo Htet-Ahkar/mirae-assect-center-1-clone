@@ -43,7 +43,7 @@ export default function FourthSection() {
     },
   ];
   return (
-    <section className="flex w-screen items-center justify-center overflow-clip bg-[#242424] md:h-screen">
+    <div className="flex w-screen items-center justify-center overflow-clip bg-[#242424] md:h-screen">
       <div className="flex h-full w-full flex-col justify-between p-3 md:p-10">
         {/* Text */}
         <div className="my-20 md:mt-32">
@@ -125,6 +125,6 @@ export default function FourthSection() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

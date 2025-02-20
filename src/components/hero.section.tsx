@@ -5,7 +5,7 @@ import heroLogo from "../../public/hero-logo.svg";
 export default function HeroSection() {
   return (
     <>
-      <section className="flex h-screen items-center justify-center overflow-clip bg-transparent text-black">
+      <div className="flex h-screen items-center justify-center overflow-clip bg-transparent text-black">
         {/* All Component need have z-index greater than 10 */}
         <div className="z-20 ml-6 mt-64 w-full md:mb-24 md:ml-24">
           <Image
@@ -39,7 +39,7 @@ export default function HeroSection() {
           sizes="100vw"
           style={{ objectFit: "cover", objectPosition: "66%" }} // Adjust position
         />
-      </section>
+      </div>
     </>
   );
 }

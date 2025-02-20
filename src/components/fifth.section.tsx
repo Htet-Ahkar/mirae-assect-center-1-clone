@@ -55,7 +55,7 @@ export default function FifthSection() {
   ];
 
   return (
-    <section className="flex w-screen items-center justify-center overflow-clip bg-white text-black md:h-screen">
+    <div className="flex w-screen items-center justify-center overflow-clip bg-white text-black md:h-screen">
       <div className="grid h-full w-full grid-cols-1 gap-5 px-5 pt-24 md:grid-cols-2 md:p-10 md:pt-36">
         {/* Left */}
         <div className="flex flex-col gap-10 md:gap-16">
@@ -135,7 +135,7 @@ export default function FifthSection() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

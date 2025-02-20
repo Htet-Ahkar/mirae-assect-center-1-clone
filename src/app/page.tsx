@@ -10,15 +10,26 @@ import {
 
 export default function Home() {
   return (
-    <>
+    // ! Scroll Snap do not work
+    <main className="w-scree scroller h-screen snap-y snap-mandatory">
       <Navbar></Navbar>
-      <HeroSection></HeroSection>
-      <SecondSection></SecondSection>
-      <CarouselSection></CarouselSection>
-      <FourthSection></FourthSection>
-      <FifthSection></FifthSection>
+      <section className="snap-center snap-always" id="1">
+        <HeroSection></HeroSection>
+      </section>
+      <section className="snap-center snap-always" id="2">
+        <SecondSection></SecondSection>
+      </section>
+      <section className="snap-center snap-always" id="3">
+        <CarouselSection></CarouselSection>
+      </section>
+      <section className="snap-center snap-always" id="4">
+        <FourthSection></FourthSection>
+      </section>
+      <section className="snap-center snap-always" id="5">
+        <FifthSection></FifthSection>
+      </section>
       <Footer></Footer>
-    </>
+    </main>
   );
 
   // return (

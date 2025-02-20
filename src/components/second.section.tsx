@@ -26,7 +26,7 @@ export default function SecondSection() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-start overflow-clip bg-[#242424] pb-16 text-white md:h-screen">
+    <div className="flex flex-col items-center justify-start overflow-clip bg-[#242424] pb-16 text-white md:h-screen">
       {/* Promotion Text */}
       <div className="ml-5 mt-20 w-full md:ml-32 md:mt-40">
         <h2 className="font-extrabold md:text-4xl">Convenience</h2>
@@ -77,6 +77,6 @@ export default function SecondSection() {
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

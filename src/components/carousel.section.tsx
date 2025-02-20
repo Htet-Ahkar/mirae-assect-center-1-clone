@@ -67,7 +67,7 @@ export default function CarouselSection() {
   ];
 
   return (
-    <section className="bg-transparen flex h-screen w-screen items-center justify-center overflow-clip">
+    <div className="bg-transparen flex h-screen w-screen items-center justify-center overflow-clip">
       <Swiper
         modules={[EffectFade, Autoplay, Pagination, A11y]}
         spaceBetween={5}
@@ -165,6 +165,6 @@ export default function CarouselSection() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 }
