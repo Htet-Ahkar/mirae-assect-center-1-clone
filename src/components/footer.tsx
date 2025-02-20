@@ -16,7 +16,7 @@ export default function Footer() {
             </span>
 
             {/* select */}
-            <select className="select select-bordered max-w-xs rounded-3xl">
+            <select className="select select-bordered max-w-xs rounded-3xl bg-transparent">
               <option>FAMILY SITE</option>
               <option>가족이 앉아</option>
             </select>
