@@ -11,18 +11,6 @@
   }
 }
 
-.swiper-pagination {
-  @apply mb-5 md:mb-16 !important;
-}
-
-.swiper-pagination-bullet {
-  @apply h-1 w-5 rounded-sm bg-white bg-opacity-70 transition-all md:w-8 !important;
-}
-
-.swiper-pagination-bullet-active {
-  @apply w-8 bg-opacity-100 md:w-10 !important;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -85,3 +73,41 @@ a {
   margin: 0;
 } 
 */
+
+.swiper-pagination {
+  @apply mb-5 md:mb-16 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply h-1 w-5 rounded-sm bg-white bg-opacity-70 transition-all md:w-8 !important;
+}
+
+.wiper-pagination-bullet-active {
+  @apply w-8 bg-opacity-100 md:w-10 !important;
+}
+
+.swiper-button-prev {
+  background-image: url("../../public/arrow-circle-right.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+
+  @apply !top-24 !h-12 !w-12 rotate-180 transition-all hover:scale-110 active:scale-90 md:!top-60;
+}
+
+.swiper-button-next {
+  background-image: url("../../public/arrow-circle-right.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+
+  @apply !top-24 !h-12 !w-12 transition-all hover:scale-110 active:scale-90 md:!top-60;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}

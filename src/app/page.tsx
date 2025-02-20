@@ -5,6 +5,7 @@ import {
   SecondSection,
   CarouselSection,
   FourthSection,
+  FifthSection,
 } from "@/components/index";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <SecondSection></SecondSection>
       <CarouselSection></CarouselSection>
       <FourthSection></FourthSection>
+      <FifthSection></FifthSection>
       <Footer></Footer>
     </>
   );

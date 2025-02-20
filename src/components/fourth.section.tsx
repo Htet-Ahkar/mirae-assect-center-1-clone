@@ -111,11 +111,12 @@ export default function FourthSection() {
                     }}
                   />
                 </figure>
-                <div className="card-body mt-5">
-                  <h2 className="card-title text-3xl font-bold tracking-tight">
+
+                <div className="card-body mt-5 !px-0">
+                  <h2 className="card-title text-xl font-bold tracking-tight md:text-3xl">
                     {card.title}
                   </h2>
-                  <p className="text-lg tracking-tight text-gray-400">
+                  <p className="tracking-tight text-gray-400 md:text-lg">
                     {card.description}
                   </p>
                 </div>
