@@ -7,3 +7,4 @@ export { default as FourthSection } from "./fourth.section";
 export { default as FifthSection } from "./fifth.section";
 export { default as AvenueCarouselSection } from "./avenue-carousel.section";
 export { default as SeventhSection } from "./seventh.section";
+export { default as Drawer } from "./drawer";

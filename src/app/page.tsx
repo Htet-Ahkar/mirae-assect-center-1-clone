@@ -8,6 +8,7 @@ import {
   FifthSection,
   AvenueCarouselSection,
   SeventhSection,
+  Drawer,
 } from "@/components/index";
 
 export default function Home() {
@@ -45,6 +46,9 @@ export default function Home() {
       </section>
 
       <Footer></Footer>
+
+      {/* Other */}
+      <Drawer></Drawer>
     </main>
   );
 
